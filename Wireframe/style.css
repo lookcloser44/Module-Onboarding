@@ -26,10 +26,12 @@ As well as useful links to learn more */
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
-body {
-  background: var(--paper);
-  color: var(--ink);
-  font: var(--font);
+ body {
+  background-image: url(https://www.robertmitchellmusic.com/wp-content/uploads/2022/10/1-5.jpg);
+  color: white;
+  font: Impact;
+  font-size: 25px;
+  text-shadow: 0.25px 0.25px #353434;
 }
 a {
   padding: var(--space);
@@ -63,6 +65,7 @@ https://gridbyexample.com/learn/
 */
 main {
   display: grid;
+  border-radius: 25px 25px 25px 25px;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
   > *:first-child {
@@ -78,7 +81,12 @@ article {
   border: var(--line);
   padding-bottom: var(--space);
   text-align: left;
+  backdrop-filter: blur(20px);
+  font-size: 25px;
+  text-shadow: 0.50px 0.50px #353434;
+  color: white;
   display: grid;
+  border-radius: 25px 25px 25px 25px;
   grid-template-columns: var(--space) 1fr var(--space);
   > * {
     grid-column: 2/3;
@@ -86,4 +94,58 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+
+.a{
+  
+  border-color:white;
+  backdrop-filter: blur(10px);
+  border-radius: 25px 25px 25px 25px;
+  color: white;
+  font-style:oblique ;
+}
+img{
+  border-radius: 25px 25px 25px 25px;
+}
+
+.b {
+  backdrop-filter: blur(10px);
+  border-color: white;
+  color:white;
+  text-shadow: 1px 1px #353434;
+  font-style:oblique ;
+}
+
+.c{
+  backdrop-filter: blur(10px);
+  border-color: white;
+  color:white;
+  text-shadow: 1px 1px #353434;
+  font-style:oblique ;
+}
+
+a:link{
+  color: rgb(133, 71, 0);
+  backdrop-filter: blur(15px);
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+a:visited {
+  color: rgb(110, 0, 18);
+  backdrop-filter: blur(15px);
+  text-decoration: none;
+  border-radius: 25px;
+}
+a:hover {
+  color: rgb(0, 160, 172);
+  backdrop-filter: blur(15px);
+  text-decoration: underline;
+  border-radius: 25px;
+}
+a:active {
+  color: rgb(66, 0, 0);
+  backdrop-filter: blur(15px);
+  text-decoration: underline;
+  border-radius: 25px;
 }
